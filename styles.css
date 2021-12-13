@@ -1,0 +1,24 @@
+@import url("https://rsms.me/inter/inter-display.css");
+
+html {
+	overflow: hidden;
+	background-color: hsl(124deg 59% 78%);
+}
+
+body {
+	width: 150%;
+	font-family: "InterDisplay var", "Inter Display", system-ui, sans-serif;
+}
+
+p {
+	font-size: 3.2em;
+    transform: rotateZ(-6deg);
+    margin: 0;
+    margin-top: -100px;
+    line-height: 4rem;
+    width: 100%;
+}
+
+span:nth-child(even) {
+	font-variation-settings: "wght" 900;
+}
