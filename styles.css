@@ -1,13 +1,29 @@
 @import url("https://rsms.me/inter/inter-display.css");
 
+::selection {
+    background: hsl(124deg 51% 23%);
+    color: hsl(240deg 100% 98%);
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        filter: blur(50px);
+    }
+    100% {
+        filter: blur(0px);
+     }
+}
+
 html {
 	overflow: hidden;
-	background-color: hsl(124deg 59% 78%);
 }
 
 body {
 	width: 150%;
 	font-family: "InterDisplay var", "Inter Display", system-ui, sans-serif;
+	background-color: hsl(124deg 59% 78%);
+	animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
 }
 
 p {
@@ -17,8 +33,13 @@ p {
     margin-top: -100px;
     line-height: 4rem;
     width: 100%;
+    font-variation-settings: "wght" 450;
 }
 
 span:nth-child(even) {
-	font-variation-settings: "wght" 900;
+	color: hsl(124deg 51% 61%);
+}
+
+span:nth-child(odd) {
+	color: hsl(130deg 39% 54%);
 }
